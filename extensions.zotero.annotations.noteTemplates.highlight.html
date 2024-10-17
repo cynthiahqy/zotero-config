@@ -1,0 +1,7 @@
+{{if color == '#2ea8e5'}}
+    <li>{{highlight quotes='false'}}</li>
+{{elseif color == '#5fb236'}}
+    <blockquote>{{highlight}}</blockquote><p>{{citation}}</p>{{if comment}}<p>{{comment}}:</p>{{endif}}
+{{else}}
+    <p>{{highlight}} {{citation}} {{comment}}{{if tags}} #{{tags join=' #'}}{{endif}}</p>
+    {{endif}}
