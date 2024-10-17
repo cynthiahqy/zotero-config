@@ -3,14 +3,22 @@
 https://www.zotero.org/support/note_templates
 
 annotation colours: 
-- yellow: '#ffd400', core ideas/contributions
-- red: '#ff6666', clarify?/WTF?
-- green: '#5fb236', references
-- blue: '#2ea8e5', definitions
-- purple: '#a28ae5', meta/related to my work (inbox)
-- magenta: '#e56eee',
-- orange: '#f19837',
-- gray: '#aaaaaa' -->
+- blue: `#2ea8e5`, definitions
+- green: `#5fb236`, references
+- red: `#ff6666`, todo/clarify?/WTF?
+- yellow: `#ffd400`, core ideas/contributions
+- purple: `#a28ae5`,
+    - meta/related to my work (inbox); use tags to signify which project
+- magenta: `#e56eee`,
+- orange: `#f19837`,
+- gray: `#aaaaaa` -->
+
+## Exporting whole collections
+
+- with PDF files but no notes or annotations (i.e. clean files for collaborators)
+    - `Export collection > Format: Zotero RDF & Export Files`
+- with everything (notes, annotations & files)
+    - `Export collection > Format: Zotero RDF & Export Notes & Export Files & Inlcude Annotations`
 
 # Template for Taking Notes
 

@@ -1,7 +1,21 @@
-{{if color == '#2ea8e5'}}
-    <li>{{highlight quotes='false'}}</li>
-{{elseif color == '#5fb236'}}
-    <blockquote>{{highlight}}</blockquote><p>{{citation}}</p>{{if comment}}<p>{{comment}}:</p>{{endif}}
+{{if color == '#2ea8e5'}} <!-- blue: definitions -->
+    <div>
+        <p>def<br>:{{highlight quotes='false'}}</p>
+        {{if comment}}<p>{{comment}}</p>{{endif}}
+        {{if tags}}<p>#{{tags join=' #'}}</p>{{endif}}
+    </div>
+{{elseif color == '#5fb236'}} <!-- green: refs to other papers -->
+    <div>
+        <p>{{highlight}} {{citation}}</p>
+        {{if comment}}<p>{{comment}}</p>{{endif}}
+        {{if tags}}<p>#{{tags join=' #'}}</p>{{endif}}
+    </div>
+{{elseif color == '#ff6666'}} <!-- red: todo/clarify/follow-up -->
+    <p>- [ ] {{comment}} {{highlight}} {{if tags}} #{{tags join=' #'}}{{endif}}</p>
+{{elseif color == '#ffd400'}} <!-- yellow: core ideas, misc -->
+    <p>{{comment}} {{highlight}} {{if tags}} #{{tags join=' #'}}{{endif}}</p>
+{{elseif color == '#a28ae5'}} <!-- purple: meta ideas, related to my work -->
+    <p>{{comment}} <blockquote>{{highlight}} {{citation}}</blockquote> {{if tags}} #{{tags join=' #'}}{{endif}}</p>
 {{else}}
     <p>{{highlight}} {{citation}} {{comment}}{{if tags}} #{{tags join=' #'}}{{endif}}</p>
-    {{endif}}
+{{endif}}
