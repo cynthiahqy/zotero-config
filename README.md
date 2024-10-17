@@ -1,3 +1,5 @@
+# Exporting from Zotero
+
 ## Modify Zotero Annotation Export
 
 https://www.zotero.org/support/note_templates
@@ -19,6 +21,13 @@ annotation colours:
     - `Export collection > Format: Zotero RDF & Export Files`
 - with everything (notes, annotations & files)
     - `Export collection > Format: Zotero RDF & Export Notes & Export Files & Inlcude Annotations`
+
+## Exporting just notes
+
+BetterBibTex adds a "Collected Notes" format to collection export. Before using this:
+
+- export annotations from PDFs into a standalone note (i.e. using `Add Item Note from Annotations` in the `Notes` pane),
+- toggle the `Show Annotation Colors` option from the `...` toolbar item when viewing the generated note
 
 # Template for Taking Notes
 
